@@ -22,14 +22,14 @@
       background-attachment: fixed;
     }
     
-    .about-img {
-      background: url('./images/about us.jpg');
-      background-size: cover;
-      background-position: center;
-      min-height: 500px;
-      border-radius: 12px;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    }
+   .about-img {
+  background: url('./images/about1.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
     
     .service-card:hover {
       transform: translateY(-10px);
@@ -113,7 +113,7 @@
     <div class="container mx-auto px-6">
       <div class="max-w-2xl animate-in">
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
-          Mylara <span class="text-orange-400">Building</span>, 
+          Mylara <span class="text-orange-400"><br>Building</span>
           Solutions<span class="text-orange-400"></span>
         </h1>
         <p class="text-xl text-gray-200 mb-8">
@@ -156,42 +156,47 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2 animate-in">
-          <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-            <span class="text-orange-500">About</span> Our Company
-          </h2>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            Founded in 2008, MYLARA Construction has grown from a small local builder to a trusted name in commercial and residential construction. Our journey has been built on a foundation of integrity, quality craftsmanship, and client satisfaction.
-          </p>
-          <p class="text-gray-600 mb-8 leading-relaxed">
-            What sets us apart is our commitment to transparent communication, innovative solutions, and attention to detail. We don't just build structures - we create spaces that inspire and endure.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition">
-              Learn More
-            </button>
-            <button class="flex items-center gap-2 text-blue-900 hover:text-orange-500 font-medium">
-              <i class="fas fa-play-circle text-xl"></i>
-              Watch Our Story
-            </button>
-          </div>
+<section id="about" class="py-20 bg-white">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      
+      <!-- Left Text Column -->
+      <div class="md:w-1/2 animate-in">
+        <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-6">
+          <span class="text-orange-500">About</span> Our Company
+        </h2>
+        <p class="text-gray-600 mb-6 leading-relaxed text-base sm:text-lg">
+          Founded in 2008, MYLARA Construction has grown from a small local builder to a trusted name in commercial and residential construction. Our journey has been built on a foundation of integrity, quality craftsmanship, and client satisfaction.
+        </p>
+        <p class="text-gray-600 mb-8 leading-relaxed text-base sm:text-lg">
+          What sets us apart is our commitment to transparent communication, innovative solutions, and attention to detail. We don't just build structures - we create spaces that inspire and endure.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">
+            Learn More
+          </button>
+          <button class="flex items-center gap-2 text-blue-900 hover:text-orange-500 font-medium transition duration-300">
+            <i class="fas fa-play-circle text-xl"></i>
+            Watch Our Story
+          </button>
         </div>
-        <div class="md:w-1/2 mt-10 md:mt-0">
-          <div class="about-img relative animate-in delay-1">
-            <div class="absolute -bottom-8 -left-8 bg-orange-500 w-32 h-32 rounded-lg flex items-center justify-center">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-white">15+</div>
-                <div class="text-white text-sm">Years Experience</div>
-              </div>
+      </div>
+
+      <!-- Right Image Column -->
+      <div class="md:w-1/2 mt-10 md:mt-0 w-full">
+        <div class="relative about-img w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl animate-in delay-1">
+          <div class="absolute -bottom-8 -left-8 bg-orange-500 w-28 h-28 sm:w-32 sm:h-32 rounded-lg flex items-center justify-center shadow-lg">
+            <div class="text-center">
+              <div class="text-2xl sm:text-3xl font-bold text-white">15+</div>
+              <div class="text-white text-sm">Years Experience</div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Services Section -->
   <section id="services" class="py-20 bg-gray-50">
