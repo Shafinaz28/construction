@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +9,84 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    
+
     body {
       font-family: 'Poppins', sans-serif;
       scroll-behavior: smooth;
     }
-    
+
     .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
     }
-    
-   .about-img {
-  background: url('./images/about1.jpg') no-repeat center center;
-  background-size: cover;
-}
+
+    .about-img {
+      background: url('./images/about1.jpg') no-repeat center center;
+      background-size: cover;
+    }
 
 
-    
+
     .service-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
-    
+
     .testimonial-card:hover {
       transform: scale(1.03);
     }
-    
+
     .animate-in {
       animation: fadeIn 1s ease-in-out;
     }
-    
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    
-    .delay-1 { animation-delay: 0.2s; }
-    .delay-2 { animation-delay: 0.4s; }
-    .delay-3 { animation-delay: 0.6s; }
-    
+
+    .delay-1 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.4s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.6s;
+    }
+
     .floating {
       animation: floating 3s ease-in-out infinite;
     }
-    
+
     @keyframes floating {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-15px); }
-      100% { transform: translateY(0px); }
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-15px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
     }
   </style>
 </head>
+
 <body class="bg-gray-50">
   <!-- Header/Navbar -->
   <header class="fixed w-full bg-white shadow-md z-50">
@@ -70,7 +95,7 @@
         <div class="flex items-center">
           <img src="./images/logo.png" alt="MYLARA Construction" class="h-12">
         </div>
-        
+
         <div class="hidden md:flex space-x-8">
           <a href="#home" class="text-blue-900 font-medium hover:text-orange-500 transition">Home</a>
           <a href="#about" class="text-blue-900 font-medium hover:text-orange-500 transition">About</a>
@@ -78,20 +103,20 @@
           <a href="#projects" class="text-blue-900 font-medium hover:text-orange-500 transition">Projects</a>
           <a href="#contact" class="text-blue-900 font-medium hover:text-orange-500 transition">Contact</a>
         </div>
-        
+
         <div class="hidden md:block">
           <button class="bg-orange-500 text-white px-6 py-2 rounded-full font-medium hover:bg-orange-600 transition">
             Get a Quote
           </button>
         </div>
-        
+
         <div class="md:hidden">
           <button id="menu-btn" class="text-blue-900 focus:outline-none">
             <i class="fas fa-bars text-2xl"></i>
           </button>
         </div>
       </div>
-      
+
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
         <a href="#home" class="block py-2 text-blue-900 hover:text-orange-500">Home</a>
@@ -121,7 +146,8 @@
           <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition">
             Our Projects
           </button>
-          <button class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-full font-medium transition">
+          <button
+            class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-full font-medium transition">
             Contact Us
           </button>
         </div>
@@ -138,7 +164,7 @@
           <div class="text-gray-600">Years Experience</div>
         </div>
         <div class="animate-in delay-2">
-          <div class="text-4xl font-bold text-blue-900 mb-2">250+</div>
+          <div class="text-4xl font-bold text-blue-900 mb-2">100+</div>
           <div class="text-gray-600">Projects Completed</div>
         </div>
         <div class="animate-in delay-3">
@@ -154,47 +180,53 @@
   </section>
 
   <!-- About Section -->
-<section id="about" class="py-20 bg-white">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row items-center gap-12">
-      
-      <!-- Left Text Column -->
-      <div class="md:w-1/2 animate-in">
-        <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-6">
-          <span class="text-orange-500">About</span> Our Company
-        </h2>
-        <p class="text-gray-600 mb-6 leading-relaxed text-base sm:text-lg">
-          Founded in 2008, MYLARA Construction has grown from a small local builder to a trusted name in commercial and residential construction. Our journey has been built on a foundation of integrity, quality craftsmanship, and client satisfaction.
-        </p>
-        <p class="text-gray-600 mb-8 leading-relaxed text-base sm:text-lg">
-          What sets us apart is our commitment to transparent communication, innovative solutions, and attention to detail. We don't just build structures - we create spaces that inspire and endure.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">
-            Learn More
-          </button>
-          <button class="flex items-center gap-2 text-blue-900 hover:text-orange-500 font-medium transition duration-300">
-            <i class="fas fa-play-circle text-xl"></i>
-            Watch Our Story
-          </button>
-        </div>
-      </div>
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center gap-12">
 
-      <!-- Right Image Column -->
-      <div class="md:w-1/2 mt-10 md:mt-0 w-full">
-        <div class="relative about-img w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl animate-in delay-1">
-          <div class="absolute -bottom-8 -left-8 bg-orange-500 w-28 h-28 sm:w-32 sm:h-32 rounded-lg flex items-center justify-center shadow-lg">
-            <div class="text-center">
-              <div class="text-2xl sm:text-3xl font-bold text-white">15+</div>
-              <div class="text-white text-sm">Years Experience</div>
+        <!-- Left Text Column -->
+        <div class="md:w-1/2 animate-in">
+          <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-6">
+            <span class="text-orange-500">About</span> Our Company
+          </h2>
+          <p class="text-gray-600 mb-6 leading-relaxed text-base sm:text-lg">
+            Founded in 2008, MYLARA Construction has grown from a small local builder to a trusted name in commercial
+            and residential construction. Our journey has been built on a foundation of integrity, quality
+            craftsmanship, and client satisfaction.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed text-base sm:text-lg">
+            What sets us apart is our commitment to transparent communication, innovative solutions, and attention to
+            detail. We don't just build structures - we create spaces that inspire and endure.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">
+              Learn More
+            </button>
+            <button
+              class="flex items-center gap-2 text-blue-900 hover:text-orange-500 font-medium transition duration-300">
+              <i class="fas fa-play-circle text-xl"></i>
+              Watch Our Story
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Image Column -->
+        <div class="md:w-1/2 mt-10 md:mt-0 w-full">
+          <div class="relative about-img w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl animate-in delay-1">
+            <div
+              class="absolute -bottom-8 -left-8 bg-orange-500 w-28 h-28 sm:w-32 sm:h-32 rounded-lg flex items-center justify-center shadow-lg">
+              <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-white">15+</div>
+                <div class="text-white text-sm">Years Experience</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Services Section -->
   <section id="services" class="py-20 bg-gray-50">
@@ -204,10 +236,11 @@
           Our <span class="text-orange-500">Services</span>
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Comprehensive construction solutions tailored to your unique needs. Quality craftsmanship at every stage of your project.
+          Comprehensive construction solutions tailored to your unique needs. Quality craftsmanship at every stage of
+          your project.
         </p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Service 1 -->
         <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 animate-in delay-1">
@@ -222,7 +255,7 @@
             Learn more <i class="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
-        
+
         <!-- Service 2 -->
         <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 animate-in delay-2">
           <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -236,7 +269,7 @@
             Learn more <i class="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
-        
+
         <!-- Service 3 -->
         <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 animate-in delay-3">
           <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -250,7 +283,7 @@
             Learn more <i class="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
-        
+
         <!-- Service 4 -->
         <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 animate-in delay-1">
           <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -264,7 +297,7 @@
             Learn more <i class="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
-        
+
         <!-- Service 5 -->
         <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 animate-in delay-2">
           <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -278,7 +311,7 @@
             Learn more <i class="fas fa-arrow-right ml-2"></i>
           </a>
         </div>
-        
+
         <!-- Service 6 -->
         <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300 animate-in delay-3">
           <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -307,19 +340,19 @@
           Our commitment to excellence sets us apart in the construction industry
         </p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Reason 1 -->
         <div class="bg-blue-800 p-8 rounded-xl hover:bg-blue-700 transition duration-300 animate-in delay-1">
           <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 mx-auto">
             <i class="fas fa-medal text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold mb-3 text-center">Quality Craftsmanship</h3>
+          <h3 class="text-xl font-bold mb-3 text-center">Skilled Craftwork</h3>
           <p class="text-blue-200 text-center">
             We use premium materials and employ skilled craftsmen to ensure every detail meets our high standards.
           </p>
         </div>
-        
+
         <!-- Reason 2 -->
         <div class="bg-blue-800 p-8 rounded-xl hover:bg-blue-700 transition duration-300 animate-in delay-2">
           <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -330,7 +363,7 @@
             Our efficient project management ensures your project stays on schedule without compromising quality.
           </p>
         </div>
-        
+
         <!-- Reason 3 -->
         <div class="bg-blue-800 p-8 rounded-xl hover:bg-blue-700 transition duration-300 animate-in delay-3">
           <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -341,7 +374,7 @@
             No hidden costs or surprises. We provide detailed quotes and stick to agreed budgets.
           </p>
         </div>
-        
+
         <!-- Reason 4 -->
         <div class="bg-blue-800 p-8 rounded-xl hover:bg-blue-700 transition duration-300 animate-in delay-1">
           <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -367,12 +400,13 @@
           A showcase of our completed projects that demonstrate our expertise and attention to detail
         </p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project 1 -->
         <div class="group relative overflow-hidden rounded-xl shadow-lg animate-in delay-1">
-          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-               alt="Modern Residence" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Modern Residence" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex items-end p-6">
             <div>
               <h3 class="text-xl font-bold text-white mb-1">Luxury Hillside Residence</h3>
@@ -380,11 +414,12 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Project 2 -->
         <div class="group relative overflow-hidden rounded-xl shadow-lg animate-in delay-2">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-               alt="Office Complex" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Office Complex" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex items-end p-6">
             <div>
               <h3 class="text-xl font-bold text-white mb-1">Downtown Office Complex</h3>
@@ -392,11 +427,12 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Project 3 -->
         <div class="group relative overflow-hidden rounded-xl shadow-lg animate-in delay-3">
-          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-               alt="Retail Center" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+          <img
+            src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Retail Center" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex items-end p-6">
             <div>
               <h3 class="text-xl font-bold text-white mb-1">Urban Retail Center</h3>
@@ -405,7 +441,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="text-center mt-12 animate-in delay-2">
         <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition">
           View All Projects
@@ -425,7 +461,7 @@
           Don't just take our word for it - hear from our satisfied clients
         </p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Testimonial 1 -->
         <div class="bg-white p-8 rounded-xl shadow-md testimonial-card transition duration-300 animate-in delay-1">
@@ -437,7 +473,8 @@
             </div>
           </div>
           <p class="text-gray-600 mb-6 italic">
-            "MYLARA transformed our outdated home into a modern dream space. Their attention to detail and communication throughout the process was exceptional."
+            "MYLARA transformed our outdated home into a modern dream space. Their attention to detail and communication
+            throughout the process was exceptional."
           </p>
           <div class="flex text-yellow-400">
             <i class="fas fa-star"></i>
@@ -447,7 +484,7 @@
             <i class="fas fa-star"></i>
           </div>
         </div>
-        
+
         <!-- Testimonial 2 -->
         <div class="bg-white p-8 rounded-xl shadow-md testimonial-card transition duration-300 animate-in delay-2">
           <div class="flex items-center mb-6">
@@ -458,7 +495,8 @@
             </div>
           </div>
           <p class="text-gray-600 mb-6 italic">
-            "We've worked with several contractors before finding MYLARA. Their professionalism and ability to deliver on time and budget is unmatched in the industry."
+            "We've worked with several contractors before finding MYLARA. Their professionalism and ability to deliver
+            on time and budget is unmatched in the industry."
           </p>
           <div class="flex text-yellow-400">
             <i class="fas fa-star"></i>
@@ -468,18 +506,20 @@
             <i class="fas fa-star"></i>
           </div>
         </div>
-        
+
         <!-- Testimonial 3 -->
         <div class="bg-white p-8 rounded-xl shadow-md testimonial-card transition duration-300 animate-in delay-3">
           <div class="flex items-center mb-6">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez" class="w-16 h-16 rounded-full object-cover">
+            <img src="./images/happy-young-man.jpg" alt="Emily Rodriguez"
+              class="w-16 h-16 rounded-full object-cover">
             <div class="ml-4">
-              <h4 class="font-bold text-blue-900">Emily Rodriguez</h4>
-              <p class="text-orange-500">Property Developer</p>
+              <h4 class="font-bold text-blue-900">Mr Raj</h4>
+              <p class="text-orange-500">Bangalore</p>
             </div>
           </div>
           <p class="text-gray-600 mb-6 italic">
-            "From the initial design phase to final construction, MYLARA demonstrated expertise at every step. Their team solved complex challenges with innovative solutions."
+            "From the initial design phase to final construction, MYLARA demonstrated expertise at every step. Their
+            team solved complex challenges with innovative solutions."
           </p>
           <div class="flex text-yellow-400">
             <i class="fas fa-star"></i>
@@ -506,7 +546,8 @@
         <button class="bg-white text-orange-500 hover:bg-gray-100 px-8 py-3 rounded-full font-medium transition">
           Get a Free Quote
         </button>
-        <button class="border-2 border-white hover:bg-white hover:text-orange-500 px-8 py-3 rounded-full font-medium transition">
+        <button
+          class="border-2 border-white hover:bg-white hover:text-orange-500 px-8 py-3 rounded-full font-medium transition">
           Call Us Now
         </button>
       </div>
@@ -522,9 +563,10 @@
             Get In <span class="text-orange-500">Touch</span>
           </h2>
           <p class="text-gray-600 mb-8">
-            Have questions about your next construction project? Our team is here to help guide you through every step of the process.
+            Have questions about your next construction project? Our team is here to help guide you through every step
+            of the process.
           </p>
-          
+
           <div class="space-y-6">
             <div class="flex items-start">
               <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
@@ -532,69 +574,61 @@
               </div>
               <div>
                 <h4 class="font-bold text-blue-900 mb-1">Our Location</h4>
-                <p class="text-gray-600">123 Construction Ave, Building City, BC 12345</p>
+                <p class="text-gray-600">S/no.25/1, Near Soladevanahalli, Police Station, Hesaraghatta, Main Road, Bangalore</p>
               </div>
             </div>
-            
+
             <div class="flex items-start">
               <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <i class="fas fa-phone-alt text-blue-900 text-xl"></i>
               </div>
               <div>
                 <h4 class="font-bold text-blue-900 mb-1">Phone Number</h4>
-                <p class="text-gray-600">+1 (123) 456-7890</p>
-                <p class="text-gray-600">+1 (123) 456-7891</p>
+                <a href="tel:+919986099900" class="text-gray-600">+91 99860 99900</a><br>
+                <a href="tel:+919886633300" class="text-gray-600">+91 98866 33300</a>
+
               </div>
             </div>
-            
+
             <div class="flex items-start">
               <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                 <i class="fas fa-envelope text-blue-900 text-xl"></i>
               </div>
               <div>
                 <h4 class="font-bold text-blue-900 mb-1">Email Address</h4>
-                <p class="text-gray-600">info@mylaraconstruction.com</p>
-                <p class="text-gray-600">support@mylaraconstruction.com</p>
+                <a href="mailto:mylara.bs@gmail.com" class="text-gray-600">mylara.bs@gmail.com</a>
+
+                
               </div>
             </div>
           </div>
+
           
-          <div class="mt-8">
-            <h4 class="font-bold text-blue-900 mb-4">Follow Us</h4>
-            <div class="flex space-x-4">
-              <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-200 transition">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-200 transition">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-200 transition">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-200 transition">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
+          
         </div>
-        
+
         <div class="lg:w-1/2 animate-in delay-1">
           <div class="bg-gray-50 p-8 rounded-xl shadow-md">
             <h3 class="text-2xl font-bold text-blue-900 mb-6">Send Us a Message</h3>
             <form>
               <div class="mb-4">
-                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                <input type="text" placeholder="Your Name"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
               </div>
               <div class="mb-4">
-                <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                <input type="email" placeholder="Your Email"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
               </div>
               <div class="mb-4">
-                <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                <input type="text" placeholder="Subject"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
               </div>
               <div class="mb-6">
-                <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                <textarea placeholder="Your Message" rows="5"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
               </div>
-              <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium transition">
+              <button type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-medium transition">
                 Send Message
               </button>
             </form>
@@ -615,20 +649,21 @@
           </p>
           <div class="flex space-x-4">
             <a href="#" class="text-blue-200 hover:text-white transition">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-facebook-f text-xl"></i>
             </a>
             <a href="#" class="text-blue-200 hover:text-white transition">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube text-xl"></i>
+            </a>
+
+            <a href="#" class="text-blue-200 hover:text-white transition">
+              <i class="fab fa-linkedin-in text-xl"></i>
             </a>
             <a href="#" class="text-blue-200 hover:text-white transition">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="text-blue-200 hover:text-white transition">
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram text-xl"></i>
             </a>
           </div>
         </div>
-        
+
         <div class="animate-in delay-1">
           <h4 class="text-lg font-bold mb-6">Quick Links</h4>
           <ul class="space-y-3">
@@ -639,7 +674,7 @@
             <li><a href="#" class="text-blue-200 hover:text-orange-400 transition">Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="animate-in delay-2">
           <h4 class="text-lg font-bold mb-6">Services</h4>
           <ul class="space-y-3">
@@ -650,22 +685,24 @@
             <li><a href="#" class="text-blue-200 hover:text-orange-400 transition">Sustainable Construction</a></li>
           </ul>
         </div>
-        
+
         <div class="animate-in delay-3">
           <h4 class="text-lg font-bold mb-6">Newsletter</h4>
           <p class="text-blue-200 mb-4">
             Subscribe to our newsletter for the latest updates and construction tips.
           </p>
           <form class="flex">
-            <input type="email" placeholder="Your Email" class="px-4 py-2 rounded-l-lg focus:outline-none text-blue-900 w-full">
+            <input type="email" placeholder="Your Email"
+              class="px-4 py-2 rounded-l-lg focus:outline-none text-blue-900 w-full">
             <button type="submit" class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-lg transition">
               <i class="fas fa-paper-plane"></i>
             </button>
           </form>
         </div>
       </div>
-      
-      <div class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center animate-in delay-1">
+
+      <div
+        class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center animate-in delay-1">
         <p class="text-blue-300 text-sm mb-4 md:mb-0">
           &copy; 2023 MYLARA Construction. All rights reserved.
         </p>
@@ -680,27 +717,27 @@
 
   <script>
     // Mobile menu toggle
-    document.getElementById('menu-btn').addEventListener('click', function() {
+    document.getElementById('menu-btn').addEventListener('click', function () {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-    
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
-        
+
         // Close mobile menu if open
         document.getElementById('mobile-menu').classList.add('hidden');
       });
     });
-    
+
     // Animation on scroll
     const animateElements = document.querySelectorAll('.animate-in');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -711,11 +748,12 @@
     }, {
       threshold: 0.1
     });
-    
+
     animateElements.forEach(element => {
       element.classList.add('opacity-0', 'translate-y-10', 'transition', 'duration-500');
       observer.observe(element);
     });
   </script>
 </body>
+
 </html>
